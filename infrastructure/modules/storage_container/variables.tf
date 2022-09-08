@@ -18,8 +18,3 @@ variable "container_access_type" {
     error_message = "The container access type is invalid."
   }
 }
-
-variable "tags" {
-  description = "(Optional) Specifies the tags of the storage account"
-  default     = {}
-}

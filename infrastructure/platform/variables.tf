@@ -8,6 +8,6 @@ variable "platform_name" {
 }
 
 variable "platform_env" {
-  type = string
+  type    = string
   default = "dev"
 }
