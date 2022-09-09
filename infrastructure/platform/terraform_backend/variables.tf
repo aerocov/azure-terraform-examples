@@ -7,7 +7,7 @@ variable "location" {
 variable "platform_name" {
   description = "(Optional) The name of the platform that is used to tag and name the resources."
   type        = string
-  default     = ""
+  default     = "hoss"
 }
 
 variable "platform_env" {

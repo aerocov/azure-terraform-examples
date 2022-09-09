@@ -11,9 +11,17 @@ terraform {
   }
 }
 
-module "tf_backend" {
-  source = "../modules/tf_backend"
 
-  platform_name = var.platform_name
-  platform_env  = var.platform_env
+provider "azurerm" {
+  features {}
+}
+
+provider "random" {}
+
+
+module "main_rg" {
+  source = "../modules/resource_group"
+
+  name     = "hoss_paltform"
+  location = "Australia Southeast"
 }
